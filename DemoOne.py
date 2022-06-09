@@ -22,6 +22,10 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
+from PIL import Image
+image = Image.open('https://en.wikipedia.org/wiki/File:Iris_virginica_2.jpg')
+st.image(image, caption='Iris virginica')
+
 df = user_input_features()
 
 st.subheader('User Input parameters')
