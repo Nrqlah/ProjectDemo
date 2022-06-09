@@ -23,8 +23,8 @@ def user_input_features():
     return features
 
 from PIL import Image
-image = Image.open('https://en.wikipedia.org/wiki/File:Iris_virginica_2.jpg')
-st.image(image, caption='Iris virginica')
+image = Image.open('Iris_virginica_2.jpg')
+st.image(image, caption='Iris Virginica Species')
 
 df = user_input_features()
 
